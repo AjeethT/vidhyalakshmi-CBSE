@@ -77,10 +77,10 @@ function InfoTable({ rows }: { rows: string[][] }) {
     <div className="overflow-x-auto">
       <table className="w-full border-collapse text-left text-sm">
         <thead>
-          <tr className="bg-sky-600 text-white">
-            <th className="border border-sky-700 px-4 py-3 w-20">SL.No.</th>
-            <th className="border border-sky-700 px-4 py-3">Information</th>
-            <th className="border border-sky-700 px-4 py-3">Details</th>
+          <tr className="bg-primary-600 text-white">
+            <th className="border border-primary-700 px-4 py-3 w-20">SL.No.</th>
+            <th className="border border-primary-700 px-4 py-3">Information</th>
+            <th className="border border-primary-700 px-4 py-3">Details</th>
           </tr>
         </thead>
         <tbody>
@@ -102,10 +102,10 @@ function DocumentTable({ rows }: { rows: string[] }) {
     <div className="overflow-x-auto">
       <table className="w-full border-collapse text-left text-sm">
         <thead>
-          <tr className="bg-sky-600 text-white">
-            <th className="border border-sky-700 px-4 py-3 w-20">SL.No.</th>
-            <th className="border border-sky-700 px-4 py-3">Documents/Information</th>
-            <th className="border border-sky-700 px-4 py-3">Upload Documents</th>
+          <tr className="bg-primary-600 text-white">
+            <th className="border border-primary-700 px-4 py-3 w-20">SL.No.</th>
+            <th className="border border-primary-700 px-4 py-3">Documents/Information</th>
+            <th className="border border-primary-700 px-4 py-3">Upload Documents</th>
           </tr>
         </thead>
         <tbody>
@@ -113,7 +113,7 @@ function DocumentTable({ rows }: { rows: string[] }) {
             <tr key={label} className="odd:bg-white even:bg-gray-50">
               <td className="border border-gray-200 px-4 py-3">{index + 1}</td>
               <td className="border border-gray-200 px-4 py-3 font-medium text-gray-800">{label}</td>
-              <td className="border border-gray-200 px-4 py-3 text-sky-700 font-semibold">Click Here</td>
+              <td className="border border-gray-200 px-4 py-3 text-primary-700 font-semibold">Click Here</td>
             </tr>
           ))}
         </tbody>
@@ -157,7 +157,7 @@ function ResultTable({ title, rows }: { title: string; rows: string[][] }) {
 function SectionCard({ title, children }: { title: string; children: ReactNode }) {
   return (
     <section className="card p-6">
-      <h2 className="text-2xl font-bold mb-6 text-sky-600">{title}</h2>
+      <h2 className="text-2xl font-bold mb-6 text-primary-600">{title}</h2>
       {children}
     </section>
   );

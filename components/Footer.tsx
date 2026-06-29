@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 pt-4">
           <div>
             <h3 className="text-xl font-bold mb-4">{SCHOOL_INFO.name}</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -81,7 +81,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8">
+        <div className="border-t border-gray-800 p-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
             <p>&copy; {currentYear} {SCHOOL_INFO.name}. All rights reserved.</p>
             <p>

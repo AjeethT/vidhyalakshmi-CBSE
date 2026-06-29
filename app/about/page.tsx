@@ -29,7 +29,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="card p-8">
-                <h2 className="text-2xl font-bold mb-4 text-sky-600">Our Mission</h2>
+                <h2 className="text-2xl font-bold mb-4 text-primary-600">Our Mission</h2>
                 <p className="text-gray-600 leading-relaxed">
                   To provide quality education that empowers students with knowledge, skills, and values
                   necessary for their personal and professional growth, enabling them to become responsible
@@ -37,7 +37,7 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="card p-8">
-                <h2 className="text-2xl font-bold mb-4 text-sky-600">Our Vision</h2>
+                <h2 className="text-2xl font-bold mb-4 text-primary-600">Our Vision</h2>
                 <p className="text-gray-600 leading-relaxed">
                   To be a premier institution recognized for academic excellence, character development,
                   and innovation, fostering an environment where every student can discover their potential
@@ -84,7 +84,7 @@ export default function AboutPage() {
         </section>
 
         {/* Call to Action */}
-        <section className="py-16 bg-sky-600 text-white">
+        <section className="py-16 bg-primary-600 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-4">Explore More About Our School</h2>
             <div className="flex gap-4 justify-center flex-wrap">

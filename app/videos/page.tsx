@@ -27,13 +27,13 @@ export default function VideosPage() {
               {Array.from({ length: 6 }).map((_, i) => (
                 <div key={i} className="group cursor-pointer">
                   <div className="card overflow-hidden">
-                    <div className="relative h-48 bg-gradient-to-br from-sky-100 to-sky-200 flex items-center justify-center">
+                    <div className="relative h-48 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
                       <div className="text-center">
                         <div className="text-5xl mb-2">▶️</div>
                       </div>
                     </div>
                     <div className="p-4">
-                      <h3 className="font-semibold text-gray-900 group-hover:text-sky-600 transition">
+                      <h3 className="font-semibold text-gray-900 group-hover:text-primary-600 transition">
                         Video Title {i + 1}
                       </h3>
                       <p className="text-gray-600 text-sm mt-1">Video description goes here</p>

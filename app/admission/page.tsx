@@ -13,7 +13,7 @@ export default function AdmissionPage() {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="py-12 bg-gradient-to-r from-sky-600 to-sky-800 text-white">
+        <section className="py-12 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Admission to Vidhyalakshmi</h1>
             <p className="text-xl opacity-90">
@@ -34,7 +34,7 @@ export default function AdmissionPage() {
                 { step: '4', title: 'Enrollment', desc: 'Complete registration and join' },
               ].map((item) => (
                 <div key={item.step} className="text-center">
-                  <div className="w-16 h-16 bg-sky-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                  <div className="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                     {item.step}
                   </div>
                   <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -60,7 +60,7 @@ export default function AdmissionPage() {
                     'Character certificate from previous school',
                   ].map((criterion, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-sky-600 font-bold mt-1">✓</span>
+                      <span className="text-primary-600 font-bold mt-1">✓</span>
                       <span className="text-gray-700">{criterion}</span>
                     </li>
                   ))}
@@ -72,7 +72,7 @@ export default function AdmissionPage() {
                 <div className="space-y-3">
                   {['Nursery', 'KG', 'Classes I - V', 'Classes VI - VIII', 'Classes IX - XII'].map((cls, i) => (
                     <div key={i} className="flex items-center gap-3 p-3 bg-white rounded border border-gray-200">
-                      <div className="w-8 h-8 bg-sky-100 text-sky-600 rounded flex items-center justify-center font-semibold text-sm">
+                      <div className="w-8 h-8 bg-primary-100 text-primary-600 rounded flex items-center justify-center font-semibold text-sm">
                         📚
                       </div>
                       <span className="font-semibold text-gray-900">{cls}</span>
@@ -98,7 +98,7 @@ export default function AdmissionPage() {
                     <input
                       type="text"
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       placeholder="Full name"
                     />
                   </div>
@@ -109,7 +109,7 @@ export default function AdmissionPage() {
                     <input
                       type="date"
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     />
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export default function AdmissionPage() {
                     <input
                       type="text"
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       placeholder="Full name"
                     />
                   </div>
@@ -133,7 +133,7 @@ export default function AdmissionPage() {
                     <input
                       type="tel"
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       placeholder="+91-XXXXXXXXXX"
                     />
                   </div>
@@ -146,7 +146,7 @@ export default function AdmissionPage() {
                   <input
                     type="email"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -155,7 +155,7 @@ export default function AdmissionPage() {
                   <label className="block text-sm font-semibold text-gray-900 mb-2">
                     Desired Class *
                   </label>
-                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent">
+                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
                     <option>Select Class</option>
                     <option>Nursery</option>
                     <option>KG</option>

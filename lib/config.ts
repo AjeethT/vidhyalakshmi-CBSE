@@ -37,6 +37,13 @@ export const SCHOOL_INFO = {
   
   // Management Details
   management: {
+    founder: {
+      name: 'Shri. Durai Shanmugam Mudaliar',
+      title: 'Founder',
+      qualification: '',
+      message: `Founder Vidhyalakshmi Group of Institutions`,
+      image: '',
+    },
     correspondent: {
       name: 'Shri. S. AshokKhumar',
       title: 'Correspondent',
@@ -101,7 +108,7 @@ type NavigationItem = {
 
 // Navigation Menu
 export const NAVIGATION: NavigationItem[] = [
-  { label: 'Home', href: '/', submenu: [] },
+  { label: 'Home', href: '/' },
   {
     label: 'About',
     href: '/about/',

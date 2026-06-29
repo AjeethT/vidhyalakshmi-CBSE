@@ -38,7 +38,7 @@ export function DynamicGallery() {
     return (
       <div className="py-16 text-center">
         <div className="inline-block animate-spin">
-          <div className="h-12 w-12 border-4 border-sky-200 border-t-sky-600 rounded-full"></div>
+          <div className="h-12 w-12 border-4 border-primary-200 border-t-primary-600 rounded-full"></div>
         </div>
         <p className="mt-4 text-gray-600">Loading gallery...</p>
       </div>
@@ -59,7 +59,7 @@ export function DynamicGallery() {
                 onClick={() => setSelectedYear(g.year)}
                 className={`px-6 py-2 rounded-lg font-semibold transition ${
                   selectedYear === g.year
-                    ? 'bg-sky-600 text-white'
+                    ? 'bg-primary-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -75,7 +75,7 @@ export function DynamicGallery() {
         <div className="space-y-12">
           {Object.entries(selectedData.events).map(([eventName, images]) => (
             <div key={eventName} className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-sky-600">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-primary-600">
                 {eventName}
               </h3>
 

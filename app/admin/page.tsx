@@ -46,7 +46,7 @@ export default function AdminDashboard() {
 
   if (!authenticated) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-sky-600 to-sky-800 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center p-4">
         <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Admin Login</h1>
           <p className="text-gray-600 mb-6">Vidhyalakshmi School Dashboard</p>
@@ -61,7 +61,7 @@ export default function AdminDashboard() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Enter admin password"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500"
                 required
               />
             </div>
@@ -69,7 +69,7 @@ export default function AdminDashboard() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-2 bg-sky-600 text-white font-semibold rounded-lg hover:bg-sky-700 disabled:opacity-50"
+              className="w-full py-2 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 disabled:opacity-50"
             >
               {loading ? 'Logging in...' : 'Login'}
             </button>
@@ -90,7 +90,7 @@ export default function AdminDashboard() {
       {/* Navbar */}
       <div className="bg-white shadow">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-sky-600">Admin Dashboard</h1>
+          <h1 className="text-2xl font-bold text-primary-600">Admin Dashboard</h1>
           <button
             onClick={async () => {
               await fetch(process.env.NEXT_PUBLIC_WORKER_URL + '/admin/logout', {
@@ -132,7 +132,7 @@ export default function AdminDashboard() {
               <div key={file} className="flex items-center justify-between p-4 bg-gray-50 rounded border border-gray-200">
                 <span className="font-mono text-sm text-gray-700">{file}</span>
                 <div className="flex gap-2">
-                  <button className="px-3 py-1 text-sm bg-sky-600 text-white rounded hover:bg-sky-700">
+                  <button className="px-3 py-1 text-sm bg-primary-600 text-white rounded hover:bg-primary-700">
                     Edit
                   </button>
                   <button className="px-3 py-1 text-sm bg-gray-600 text-white rounded hover:bg-gray-700">
@@ -148,7 +148,7 @@ export default function AdminDashboard() {
         <div className="mt-8 bg-white rounded-lg shadow p-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Media Upload</h2>
 
-          <div className="border-2 border-dashed border-sky-300 rounded-lg p-8 text-center hover:border-sky-500 transition cursor-pointer">
+          <div className="border-2 border-dashed border-primary-300 rounded-lg p-8 text-center hover:border-primary-500 transition cursor-pointer">
             <div className="text-4xl mb-2">📁</div>
             <p className="font-semibold text-gray-900 mb-1">Drag and drop files here</p>
             <p className="text-sm text-gray-600">or click to browse</p>
@@ -167,7 +167,7 @@ export default function AdminDashboard() {
             </select>
           </div>
 
-          <button className="mt-4 w-full py-2 bg-sky-600 text-white font-semibold rounded hover:bg-sky-700">
+          <button className="mt-4 w-full py-2 bg-primary-600 text-white font-semibold rounded hover:bg-primary-700">
             Upload
           </button>
         </div>

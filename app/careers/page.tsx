@@ -34,12 +34,12 @@ export default function CareersPage() {
                 <div key={i} className="card p-6 hover:shadow-lg transition">
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-lg font-bold text-gray-900">{job.role}</h3>
-                    <span className="bg-sky-100 text-sky-600 px-3 py-1 rounded text-sm">
+                    <span className="bg-primary-100 text-primary-600 px-3 py-1 rounded text-sm">
                       {job.dept}
                     </span>
                   </div>
                   <p className="text-gray-600 mb-4">Experience Required: {job.exp}</p>
-                  <button className="text-sky-600 font-semibold hover:text-sky-700">
+                  <button className="text-primary-600 font-semibold hover:text-primary-700">
                     Apply Now →
                   </button>
                 </div>

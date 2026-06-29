@@ -16,7 +16,7 @@ export function Navbar() {
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex-shrink-0">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-sky-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
                 <img
                   src={getR2UrlWithDevProxy('Site Photos/School logo.png')}
                   alt={`${SCHOOL_INFO.name} logo`}
@@ -32,7 +32,7 @@ export function Navbar() {
               <div key={item.href} className="group relative">
                 <Link
                   href={item.href}
-                  className="text-gray-700 hover:text-sky-600 transition font-medium"
+                  className="text-gray-700 hover:text-primary-600 transition font-medium"
                 >
                   {item.label}
                 </Link>
@@ -42,7 +42,7 @@ export function Navbar() {
                       <Link
                         key={`${subitem.label}-${subitem.href}`}
                         href={subitem.href}
-                        className="block px-4 py-2 text-gray-700 hover:text-sky-600 hover:bg-gray-50 first:rounded-t-lg last:rounded-b-lg"
+                        className="block px-4 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 first:rounded-t-lg last:rounded-b-lg"
                       >
                         {subitem.label}
                       </Link>
@@ -73,7 +73,7 @@ export function Navbar() {
                 {item.submenu ? (
                   <button
                     onClick={() => setOpenSubmenu(openSubmenu === item.href ? null : item.href)}
-                    className="w-full text-left px-4 py-2 text-gray-700 hover:text-sky-600 font-medium flex justify-between items-center"
+                    className="w-full text-left px-4 py-2 text-gray-700 hover:text-primary-600 font-medium flex justify-between items-center"
                   >
                     {item.label}
                     <ChevronDown
@@ -84,7 +84,7 @@ export function Navbar() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="block px-4 py-2 text-gray-700 hover:text-sky-600 font-medium"
+                    className="block px-4 py-2 text-gray-700 hover:text-primary-600 font-medium"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -97,7 +97,7 @@ export function Navbar() {
                       <Link
                         key={`${subitem.label}-${subitem.href}`}
                         href={subitem.href}
-                        className="block px-4 py-2 text-gray-600 hover:text-sky-600"
+                        className="block px-4 py-2 text-gray-600 hover:text-primary-600"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {subitem.label}

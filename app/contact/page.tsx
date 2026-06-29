@@ -32,7 +32,7 @@ export default function ContactPage() {
 
                 <div className="space-y-6">
                   <div className="flex gap-4">
-                    <Phone className="w-6 h-6 text-sky-600 mt-1 flex-shrink-0" />
+                    <Phone className="w-6 h-6 text-primary-600 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
                       {SCHOOL_INFO.phoneNumbers.map((phone) => (
@@ -42,7 +42,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex gap-4">
-                    <Mail className="w-6 h-6 text-sky-600 mt-1 flex-shrink-0" />
+                    <Mail className="w-6 h-6 text-primary-600 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">Email</h3>
                       {SCHOOL_INFO.contactPageEmails.map((email) => (
@@ -52,7 +52,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex gap-4">
-                    <MapPin className="w-6 h-6 text-sky-600 mt-1 flex-shrink-0" />
+                    <MapPin className="w-6 h-6 text-primary-600 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">Address</h3>
                       <p className="text-gray-600">{SCHOOL_INFO.address}</p>
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex gap-4">
-                    <Clock className="w-6 h-6 text-sky-600 mt-1 flex-shrink-0" />
+                    <Clock className="w-6 h-6 text-primary-600 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">Office Hours</h3>
                       <p className="text-gray-600">
@@ -83,7 +83,7 @@ export default function ContactPage() {
                     <input
                       type="text"
                       placeholder="Your name"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       required
                     />
                   </div>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                     <input
                       type="email"
                       placeholder="your@email.com"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       required
                     />
                   </div>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                     <input
                       type="tel"
                       placeholder="96265 96111"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     />
                   </div>
 
@@ -118,7 +118,7 @@ export default function ContactPage() {
                     <textarea
                       placeholder="Your message here..."
                       rows={4}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                       required
                     ></textarea>
                   </div>

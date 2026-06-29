@@ -26,7 +26,7 @@ export default function AcademicsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {['Scholastic Activities', 'Co-Scholastic Activities', 'Language Program', 'STEM Focus', 'Arts & Culture', 'Sports Program'].map((prog) => (
                 <div key={prog} className="card p-6">
-                  <h3 className="text-xl font-bold mb-3 text-sky-600">{prog}</h3>
+                  <h3 className="text-xl font-bold mb-3 text-primary-600">{prog}</h3>
                   <p className="text-gray-600">Comprehensive program designed to develop student skills and interests in {prog.toLowerCase()}</p>
                 </div>
               ))}
@@ -41,7 +41,7 @@ export default function AcademicsPage() {
               <ul className="space-y-4">
                 {['Concept-based learning', 'Activity-oriented teaching', 'Digital classroom resources', 'Continuous assessment', 'Student-centric approach'].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
-                    <span className="w-6 h-6 bg-sky-600 text-white rounded-full flex items-center justify-center text-sm">✓</span>
+                    <span className="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm">✓</span>
                     <span className="text-gray-700">{item}</span>
                   </li>
                 ))}

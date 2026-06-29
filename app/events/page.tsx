@@ -31,10 +31,10 @@ export default function EventsPage() {
                 { date: 'September 5, 2024', title: 'Teachers Day', desc: 'Honoring our educators' },
                 { date: 'October 2, 2024', title: 'Gandhi Jayanti', desc: 'Cultural program and awareness' },
               ].map((event, i) => (
-                <div key={i} className="card p-6 border-l-4 border-sky-600">
+                <div key={i} className="card p-6 border-l-4 border-primary-600">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-xl font-bold text-gray-900">{event.title}</h3>
-                    <span className="bg-sky-100 text-sky-600 px-3 py-1 rounded text-sm font-semibold">
+                    <span className="bg-primary-100 text-primary-600 px-3 py-1 rounded text-sm font-semibold">
                       {event.date}
                     </span>
                   </div>

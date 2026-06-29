@@ -15,6 +15,7 @@ export default function ManagementPage() {
   };
 
   const managers = [
+    {role:'founder', data:management.founder},
     { role: 'correspondent', data: management.correspondent },
     { role: 'managingDirector', data: management.managingDirector },
     { role: 'principal', data: management.principal },
@@ -58,7 +59,7 @@ export default function ManagementPage() {
 
                   {/* Content */}
                   <div className="md:col-span-2">
-                    <h2 className="text-3xl font-bold text-sky-600 mb-2">{data.name}</h2>
+                    <h2 className="text-3xl font-bold text-primary-600 mb-2">{data.name}</h2>
                     <p className="text-lg font-semibold text-gray-700 mb-4">{data.title}</p>
                     {data.qualification && (
                       <p className="text-gray-600 mb-6 text-sm">{data.qualification}</p>

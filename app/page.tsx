@@ -22,16 +22,16 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <section className="relative h-[500px] bg-gradient-to-r from-sky-600 to-sky-800 overflow-hidden">
+        <section className="relative h-[500px] bg-gradient-to-r from-primary-600 to-primary-800 overflow-hidden">
           {!heroImageError && (
             <img
               src={getR2UrlWithDevProxy('Site Photos/school.jpeg.JPG')}
               alt="Vidhyalakshmi School campus"
-              className="absolute inset-0 w-full h-full object-cover opacity-30"
+              className="absolute inset-0 w-full h-full object-cover opacity-80"
               onError={handleHeroImageError}
             />
           )}
-          <div className="absolute inset-0 bg-gradient-to-r from-sky-600/80 to-sky-800/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-black-900/80"></div>
           <div className="relative h-full flex items-center justify-center">
             <div className="text-center text-white px-4">
               <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -44,7 +44,7 @@ export default function Home() {
                 <a href="/admission/" className="btn-primary">
                   Apply Now
                 </a>
-                <a href="/about/" className="btn-outline text-white border-white hover:bg-white hover:text-sky-600">
+                <a href="/about/" className="btn-outline text-white border-white hover:bg-white hover:text-primary-600">
                   Learn More
                 </a>
               </div>
@@ -62,7 +62,7 @@ export default function Home() {
                 { label: 'School Code', value: SCHOOL_INFO.schoolCode },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <div className="text-4xl font-bold text-sky-600 mb-2">
+                  <div className="text-4xl font-bold text-primary-600 mb-2">
                     {stat.value}
                   </div>
                   <p className="text-gray-600">{stat.label}</p>
@@ -105,7 +105,7 @@ export default function Home() {
                 },
               ].map((feature) => (
                 <div key={feature.title} className="card p-8 text-center hover:shadow-lg transition">
-                  <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center text-2xl font-bold">
+                  <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary-100 text-primary-700 flex items-center justify-center text-2xl font-bold">
                     {feature.icon}
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
@@ -153,14 +153,14 @@ export default function Home() {
                     )}
                   </div>
                   <h3 className="font-bold text-gray-900">{member.name}</h3>
-                  <p className="text-sky-600">{member.title}</p>
+                  <p className="text-primary-600">{member.title}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-sky-600 text-white">
+        <section className="py-16 bg-primary-600 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-6">Ready to Join Our Community?</h2>
             <p className="text-xl mb-8 opacity-90">
@@ -170,7 +170,7 @@ export default function Home() {
               <a href="/admission/" className="btn-primary">
                 Start Application
               </a>
-              <a href="/contact/" className="px-6 py-3 bg-white text-sky-600 rounded-lg font-semibold hover:bg-gray-100 transition">
+              <a href="/contact/" className="px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-gray-100 transition">
                 Contact Us
               </a>
             </div>
